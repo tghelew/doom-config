@@ -12,7 +12,9 @@
      (+upload-root-remotes
       ("eshua" . "/ssh:thierry@eshua.ghelew.ch:/home/thierry/temail")
       ("eshub" . "/ssh:thierry@eshub.ghelew.ch:/home/thierry/temail")
-      ("eshuc" . "/ssh:thierry@eshuc.ghelew.ch:/home/thierry/temail")))))
+      ("eshuc" . "/ssh:thierry@eshuc.ghelew.ch:/home/thierry/temail"))))
+ '(smtpmail-smtp-server "smtp.ghelew.ch")
+ '(smtpmail-smtp-service 587))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
