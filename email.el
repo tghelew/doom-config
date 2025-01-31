@@ -39,3 +39,5 @@
       message-sendmail-f-is-evil t
       message-sendmail-extra-arguments '("--read-envelope-from")
       message-send-mail-function 'message-send-mail-with-sendmail))
+; (add-to-list 'mu4e-bookmarks
+;  '(`(concat "maildir:/" user-mail-address "/Inbox") "Inbox maildir" ?i) t)
