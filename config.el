@@ -32,7 +32,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-tokyo-night)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -87,7 +87,7 @@
 ;; :term eshell
 (when (modulep! :term eshell)
   (if (executable-find "exa")
-      (let (( exa-cmd "exa --group-directories-first --git" ))
+      (let (( exa-cmd "exa --group-directories-first --git"))
         (set-eshell-alias!
          "l" (concat exa-cmd " -blF $*")
          "ll" (concat exa-cmd " -abghilmu $*")
@@ -97,8 +97,8 @@
     (set-eshell-alias!
      "l" "ls --file-type -lh $*"
      "ll" "ls -lah --sort=time $*"
-     "llm" "ls -lah --sort=time $*"
-     )
+     "llm" "ls -lah --sort=time $*")
+
     (set-eshell-alias!
      ".." "cd .."
      "..." "cd ../.."
@@ -127,9 +127,9 @@
           ("e" ,user-emacs-directory "Emacs user directory")
           ("h" "~/" "Home")
           ("p" "~/projects" "Projects")
-          ("c" "/usr/local/etc" "Local Etc")
-          )))
+          ("c" "/usr/local/etc" "Local Etc"))))
 
+;; email
 (when (modulep! :email mu4e)
   (load! "email"))
 ;; Bindings
