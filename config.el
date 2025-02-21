@@ -36,7 +36,7 @@
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type 'relative)
+(setq display-line-numbers-type 't)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -82,7 +82,7 @@
  epg-pinentry-mode 'loopback)
 
 (setq
- doom-font (font-spec :name "Fira Code" :size 12))
+ doom-font (font-spec :name "Fira Code" :size 14)) 
 
 ;; :term eshell
 (when (modulep! :term eshell)
