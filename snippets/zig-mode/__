@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: new zig module
+# uuid:
+# key: __
+# condition: t
+# --
+const std = @import("std");
+$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: import
+# uuid:
+# key: <import
+# condition: t
+# --
+const ${1:name} = @import("${2:path}");
+$0

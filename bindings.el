@@ -9,5 +9,8 @@
  :n "M-F"
  (cond ((modulep! :completion vertico)   (cmd!! #'consult-line-multi 'all-buffers))
        ((modulep! :completion ivy)       #'swiper-all)
-       ((modulep! :completion helm)      #'swiper-all))
- :in "C-w"    :desc "window"              evil-window-map)
+       ((modulep! :completion helm)      #'swiper-all)))
+
+(when (modulep! :editor evil)
+  (setq evil-escape-key-sequence "jk"))
+

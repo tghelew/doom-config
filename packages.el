@@ -20,7 +20,7 @@
 ;; (package! this-package
 ;;   :recipe (:host github :repo "username/repo"
 ;;            :files ("some-file.el" "src/lisp/*.el")))
-
+(package! nushell-mode :recipe (:host github :repo "mrkkrp/nushell-mode"))
 ;; If you'd like to disable a package included with Doom, you can do so here
 ;; with the `:disable' property:
 ;; (package! builtin-package :disable t)
