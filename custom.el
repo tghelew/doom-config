@@ -3,11 +3,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("2f7fa7a92119d9ed63703d12723937e8ba87b6f3876c33d237619ccbd60c96b9" default))
  '(safe-local-variable-values
    '((ssh-deploy-script lambda nil
-      (let
-          ((default-directory ssh-deploy-root-remote))
-        (shell-command "make all")))
+      (let ((default-directory ssh-deploy-root-remote))
+       (shell-command "make all")))
      (ssh-deploy-on-explicit-save)
      (+upload-root-remotes
       ("eshua" . "/ssh:thierry@eshua.ghelew.ch:/home/thierry/temail")
