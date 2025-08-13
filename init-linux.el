@@ -165,7 +165,7 @@
         +tree-sitter)
 
        :email
-       (mu4e +org +mbsync)
+       ;;(mu4e +org +mbsync)
        ;;notmuch
        ;;(wanderlust +gmail)
 

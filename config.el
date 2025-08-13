@@ -127,7 +127,7 @@
         `(
           ("e" ,user-emacs-directory "Emacs user directory")
           ("h" "~/" "Home")
-          ("p" "~/projects" "Projects"))))
+          ("p" "~/Projects" "Projects"))))
 
 ;; email
 (when (modulep! :email mu4e)
